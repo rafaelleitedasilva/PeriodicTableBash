@@ -39,14 +39,6 @@ else
     TYPE=$($PSQL "SELECT type FROM types WHERE type_id=$ELEMENT_TYPE");
     
 
-    echo "The element with atomic number 
-    $ELEMENT_ATOMIC_NUMBER is 
-    $ELEMENT_NAME ($ELEMENT_SYMBOL). 
-    It's a $TYPE, 
-    with a mass of 
-    $ELEMENT_MASS amu. 
-    $ELEMENT_NAME has a melting point of 
-    $ELEMENT_MELTING_POINT celsius and a boiling point of 
-    $ELEMENT_BOILING_POINT celsius."
+    echo "The element with atomic number $ELEMENT_ATOMIC_NUMBER is $ELEMENT_NAME ($ELEMENT_SYMBOL). It's a $TYPE, with a mass of $ELEMENT_MASS amu. $ELEMENT_NAME has a melting point of $ELEMENT_MELTING_POINT celsius and a boiling point of $ELEMENT_BOILING_POINT celsius."
   fi
 fi
